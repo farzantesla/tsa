@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+     <link rel="stylesheet" href="CSS/slicknav.css">
+     
+       <!-- Syntax Highlighter -->
+  <!-- Demo CSS -->
+	<link rel="stylesheet" href="css/slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+	<!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script type="text/javascript">
+$(function(){
+	$(".scroll").on('click',function(){
+	var id = $(this).attr('href');
+	var offset = $(id).offset();
+	console.log(offset);
+	$('html, body').animate({scrollTop: offset.top}, 1000);
+        return false;
+	});
+	
+});
+</script>
+  </head>
+  <body>
+	<header class="headr_one">
+    	<div class="container">
+        	<div class="col-md-4 margn_top"><figure class="login_section"><img src="images/logo.png" class="img-responsive"></figure></div>
+            <div class="col-md-4 col-sm-12 col-xs-12 pull-right">
+            <a href="#" class="garge">
+            	<img src="images/garge.png">
+                My Garage (0)
+            </a>
+            <div class="logian_main">
+            	<ul class="list-unstyled list-inline center-block">
+                	<li><a href="#"  data-toggle="modal" data-target="#myLogin"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Login</a></li>
+                    	<li>|</li>
+                    <li><a href="#" data-toggle="modal" data-target="#myLogin"><span class="glyphicon glyphicon-check" aria-hidden="true"></span>Register</a></li>
+                </ul>
+            </div>		
+            </div>
+          	<div class="navi_top">
+        <ul id="menu">
+    		         <li><a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Account</a>
+                    </li>
+                     <li>
+                        <a href="#">Registration</a>
+                    </li>
+                     <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                     <li>
+                        <a href="#">General Listings</a>
+                    </li>
+                     <li>
+                        <a href="#">Terms & Condition</a>
+                    </li>
+                     <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                     <li>
+                        <a href="#">Account</a>
+                    </li>
+</ul>
+
+<div id="demo1"></div>
+</div>
+			<div class="banner">
+            <figure><img src="images/slider.png" class="img-responsive"></figure>
+            </div>
+            <div class="arrow_down"><figure><a href="#auction" class="scroll"><img src="images/arrow.png"></a></figure></div>
+             
+            <div class="col-md-4">
+            	<a class="van_car" href="#"> <img src="images/car.png">Car</a>
+                    <a class="car_van" href="#"><img src="images/van.png">Van</a>
+           
+            </div>
+   </div>
+   </header>
+   <div class="container-fluid blue_bg">
+   		<div class="container">
+        	<div class="row">
+            <div class="col-md-2  ">
+            <select class="form-control margn_top">
+  <option>All Makes</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+            </div>
+            <div class="col-md-2">
+               <select class="form-control margn_top">
+  <option>All Models</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+            </div>
+            <div class="col-md-2">
+               <select class="form-control margn_top">
+  <option>Price From</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+            </div>
+            <div class="col-md-2">
+               <select class="form-control margn_top">
+  <option>Price To</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+            </div>
+            <div class="col-md-4">
+               <a href="#" class="submit_search">Submit</a>
+            </div>
+            </div>
+        </div>
+   </div>
+   <div class="container-fluid latest_auction">
+   		<div class="container">
+        	<h1 class="hello_heading text-center" id="auction">Latest Added  <span>Auction</span> </h1>
+            
+              <div class="col-md-12"> 
+            <section class="slider">
+        <div class="flexslider carousel">
+          <ul class="slides">
+            <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+            <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+             <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+           <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+            <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+               <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+          </ul>
+        </div>
+      </section>
+        </div>
+         
+        </div>
+   </div>
+   
+   <div class="container">
+        	<h1 class="car_soon text-center" >Cars Ending Soon </h1>
+            
+              <div class="col-md-12"> 
+            <section class="slider">
+        <div class="flexslider carousel">
+          <ul class="slides">
+            <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+            <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+             <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+           <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+            <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+               <li><a href="#">
+            	<div class="pic_div"> <img src="images/1.jpg" /></div>
+                <div class="car_head">Aixam Crossline <br><span>Sitquet amert</span></div>
+                <div class="car_head_right">
+                <span><img src="images/calender.jpg">2015</span>
+                <span><img src="images/2nd.jpg">19,000 Km</span>
+                <span><img src="images/loc.jpg">Yarkshir</span>
+                </div>
+                <div class="start_time">Time Start : 20 feb 2015 14:02</div>
+				<div class="end_time">Time Left   : 8 days ,15 hours</div>
+                <div class="currunt_bid">Current Bid : £25,380</div>
+                </a>
+  	    	   </li>
+          </ul>
+        </div>
+      </section>
+        </div>
+         
+        </div>
+        
+        <div class="container-fluid auction_pricing">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-6">
+                    	<div class="auction_pricing_car">
+                        	<h1>Simple, fair Car <span>Auction Pricing</span></h1>
+                            <p>
+
+ velit Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+ ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit <br><br>
+
+esse cillum dolore eu fugiat nulla pariatur. <br><br>
+
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+esse cillum dolore eu fugiat nulla pariatur. 
+
+</p>
+<a href="#" class="read_more_btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                    	<div class="rates_pricing">
+                        	<h1>Lorem ipsum dolor</h1>
+                            <div class="strike_price"><strike><b>$25,000</b></strike></div>
+                            <p>Loerem Ipsum Dolor</p>
+                            <div class="unstrike_price"><b>$25,000</b></div>
+                            <a href="#" class="read_more_price">Read More</a>
+                            <br clear="all">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+   <div class="container-fluid buying_process">
+   		<div class="container">
+        	<h2 class="get_started">GET STARTED WITH OPEN LISTINGS</h2>
+            <h1 class="buy_process_txt"><b>Where are you in the </b><span><b>buying process?</b></span></h1>
+          <div class="col-md-6">
+          <a href="#" class="click1"></a>
+          </div>
+          <div class="col-md-6">
+          <a href="#" class="click2"></a>
+          </div>  
+        </div>
+   </div> 
+   <div class="container-fluid client_logos">
+   		<div class="container">
+        <h1 class="car_soon text-center margn_bottom_trirty" >Our Clients </h1>
+        		<div class="col-md-2 col-sm-2"><img src="images/lg2.png" class="img-responsive text-center"></div>
+                <div class="col-md-2 col-sm-2"><img src="images/lg1.png" class="img-responsive text-center"></div>
+                <div class="col-md-2 col-sm-2"><img src="images/lg2.png" class="img-responsive text-center"></div>
+                <div class="col-md-2 col-sm-2"><img src="images/lg1.png" class="img-responsive text-center"></div>
+                <div class="col-md-2 col-sm-2"><img src="images/lg2.png" class="img-responsive text-center"></div>
+                <div class="col-md-2 col-sm-2"><img src="images/lg1.png" class="img-responsive text-center"></div>
+        </div>
+  </div>
+  
+  <div class="container-fluid black_bg">
+  		<div class="container">
+        	<div class="row">
+            	<div class="col-md-4">
+                	<div class="email_subscrib">
+                    	<h1>Newsletter</h1>
+                        <p>velit Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        <button type="button" class="btn btn-default margn_top ">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                <div class="email_subscrib">
+                    	<h1>Latest Tweet</h1>
+                        
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <div class="email_subscrib">
+                    	<h1>Contact Us</h1>
+                        <div class="fotter_pra "><i class="fa fa-location-arrow fa-lg"></i>  Address 1234 Street name</div>
+                        <div class="fotter_pra margn_top"><i class="fa fa-phone fa-lg"></i>  Phone 123456</div>
+                        <div class="fotter_pra margn_top"><i class="fa fa-inbox fa-lg"></i>  Email abc@abc.com</div>
+                       
+                                      
+                                                     
+                                                                    
+                 </div>
+                </div>
+        </div>
+  </div>
+   
+ 
+
+</div>
+<footer class="bg_ftr">
+	<div class="container">
+    	<p class="copyright">Copyright 2015 - 2016, All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+<!------------popup------------------>
+
+
+
+<!-- Modal Login -->
+<div class="modal fade" id="myLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#Login" aria-controls="Login" role="tab" data-toggle="tab">Login</a></li>
+    <li role="presentation"><a href="#Register" aria-controls="Register" role="tab" data-toggle="tab">Register</a></li>
+
+  </ul>
+       
+      </div>
+      <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="Login">
+    <div class="modal-body">
+        <input type="text" class="form-control margn_top" id="recipient-name" placeholder="User Name">
+        <input type="password" class="form-control margn_top" id="recipient-name" placeholder="Password">
+         <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember Me
+    </label>
+    <a href="#" class="forgot_paswrd">Forgot Password?</a>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="Register">
+    <div class="modal-body">
+        <input type="text" class="form-control margn_top" id="recipient-name" placeholder="Company Name">
+        <input type="password" class="form-control margn_top" id="recipient-name" placeholder="Full Name">
+             <input type="text" class="form-control margn_top" id="recipient-name" placeholder="Email Address">
+        <input type="password" class="form-control margn_top" id="recipient-name" placeholder="Phone Number">
+             <input type="text" class="form-control margn_top" id="recipient-name" placeholder="Company Contact Number">
+        <input type="password" class="form-control margn_top" id="recipient-name" placeholder="Address">
+             <input type="text" class="form-control margn_top" id="recipient-name" placeholder="Website">
+        <input type="password" class="form-control margn_top" id="recipient-name" placeholder="Vat Number">
+             <input type="text" class="form-control margn_top" id="recipient-name" placeholder="Business Number">
+         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Register</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Modal Register -->
+
+
+    <!-- MENU -->
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav({
+		prependTo:'#demo1'
+});
+
+});
+</script>
+
+  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+   <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 210,
+        itemMargin: 5,
+        minItems: 2,
+        maxItems: 4,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script defer src="js/demo.js"></script>
+    
+  </body>
+</html>

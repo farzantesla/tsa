@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('fonts/Roboto-Regular.eot');
+	src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Roboto-Regular.woff') format('woff'), url('fonts/Roboto-Regular.ttf')    format('truetype'), url('fonts/Roboto-Regular.svg#aachen_btroman') format('svg');
+	font-weight: light;
+	font-style: light;
+}
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('fonts/Roboto-Light.eot');
+	src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('fonts/Roboto-Light.woff') format('woff'), url('fonts/Roboto-Light.ttf')    format('truetype'), url('fonts/Roboto-Light.svg#aachen_btroman') format('svg');
+	font-weight: light;
+	font-style: light;
+}
+@font-face {
+	font-family: 'Calibri-Light';
+	src: url('fonts/Calibri-Light.eot');
+	src: url('fonts/Calibri-Light.eot?#iefix') format('embedded-opentype'), url('fonts/Calibri-Light.woff') format('woff'), url('fonts/Calibri-Light.ttf')    format('truetype'), url('fonts/Calibri-Light.svg#aachen_btroman') format('svg');
+	font-weight: light;
+	font-style: light;
+}
+.margn_top{margin-top:10px;}
+
+.margn_bottom_trirty{margin-bottom:30px;}
+
+.margn_bottom{margin-bottom:10px;}
+
+.headr_one{background:url(../images/bg_1.png) no-repeat;background-size:100% 100%;width:100%;float:left;}
+
+.login_section{width:296px;margin:0 auto;}
+
+.login_section img {width:100%;height:100%;}
+
+.navi_top{width:100%;float:left;margin-top:30px;}
+
+.navi_top ul{list-style:none;float:left;margin:0;padding:0;}
+
+.navi_top ul li{font:14px Gotham, 'Roboto-Regular';color:#fff;float:left;}
+
+.navi_top ul li a{font:14px 'Roboto-Regular';color:#fff;float:left;padding:10px 31px;text-decoration:none;}
+
+.navi_top ul li a:hover{background:#108dd1;}
+
+.garge{width:auto;float:left;margin-top:10px;font:14px 'Roboto-Regular';color:#fff;padding-top:12px;}
+
+.garge img{width:22px;height:19px;float:left;margin-right:10px;margin-top:-5px;}
+
+.logian_main{  background: none repeat scroll 0 0 #108dd1;border-radius: 20px;-moz-border-radius: 20px;-ms-border-radius: 20px;-o-border-radius: 20px;-webkit-border-radius: 20px;float: right;margin-top: 8px;padding: 3px 20px;}
+
+.logian_main ul li {color:#fff;margin-top:5px;}
+
+.logian_main ul li a{color:#fff;}
+
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 50em) {
+	.js #menu {
+		display:none;
+	}
+	
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+
+.banner{width:100%;float:left;margin-top:250px;}
+
+.arrow_down{width:100%;float:left;margin-top:100px;margin-bottom:180px;text-align:center;}
+
+a.van_car {padding:15px 30px;float:left;color:#fff;margin:0 !important;background:#686868;border-radius:8px 0 0 0;}
+
+a.van_car img{width:52px;height:20px;margin-right:10px;}
+
+a.van_car:hover {background:#1b648c;color:#fff;}
+
+
+a.car_van {padding:15px 30px;float:left;color:#fff;margin:0 !important;background:#686868;border-radius:0px 8px 0 0px;}
+
+a.car_van img{width:51px;height:20px;margin-right:10px;}
+
+a.car_van:hover {background:#1b648c;color:#fff;}
+
+.blue_bg{background:#108dd1;padding-bottom:10px;}
+
+a.submit_search{background:#2e2e2e !important;color:#fff;margin:10px 0 !important;padding:7px 65px;float:left;}
+
+a.submit_search:hover{background:#1b648c !important;color:#fff;}
+
+.latest_auction{float: left;width: 100%;background:url(../images/car_bg.png) repeat center fixed;-webkit-background-size: cover;moz-background-size: cover;-o-background-size: cover;background-size: cover;min-height:400px;}
+
+.hello_heading{color:#fff;font:58px 'Calibri-Light';font-weight:bold;}
+
+.hello_heading span{color:#108dd1;}
+
+.car_soon{color:#2e2e2e;font:58px 'Calibri-Light';font-weight:bold;margin-top:10px;}
+
+.auction_pricing{float: left;width: 100%;background:url(../images/bg2.png) repeat center fixed;-webkit-background-size: cover;moz-background-size: cover;-o-background-size: cover;background-size: cover;min-height:487px;}
+
+.auction_pricing_car{width:100%;float:left;margin-top:30px;}
+
+.auction_pricing_car h1{color:#fff;font:34px 'Roboto-Regular';}
+
+.auction_pricing_car h1 span{font-size:46px;}
+
+.auction_pricing_car p{color:#fff;font:18px 'Calibri-Light';}
+
+a.read_more_btn{background:#108dd1;padding:5px 20px;font:18px 'Calibri-Light';float:left;margin-top:10px;color:#fff;border-radius:20px;-moz-border-radius:20px;-ms-border-radius:20px;-o-border-radius:20px;-webkit-border-radius:20px;}
+
+.rates_pricing{width:80%;margin:66px auto;background:#fff;}
+
+.rates_pricing h1{background:#292624;padding:8px 0;text-align:center;width:100%;font:25px 'Calibri-Light';margin:0;color:#fff;float:left;}
+
+.strike_price{width:100%;text-align:center;font:45px 'Calibri-Light';color:#2e2e2e;float:left;}
+
+.rates_pricing p{width:100%;text-align:center;font:20px 'Calibri-Light';color:#108dd1;margin-top:10px;float:left;}
+
+.unstrike_price{width:100%;text-align:center;font:45px 'Calibri-Light';color:#108dd1;float:left;}
+
+a.read_more_price{background:#108dd1;padding:10px 0px;font:18px 'Calibri-Light';float:left;margin:5% 0 10% 29%;color:#fff;border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;-webkit-border-radius:3px;width:45%;text-align:center;}
+
+.buying_process{float: left;width: 100%;background:url(../images/car_bg1.png) repeat center fixed;-webkit-background-size: cover;moz-background-size: cover;-o-background-size: cover;background-size: cover;min-height:596px;}
+
+.get_started{width:100%;text-align:center;font:36px 'Calibri-Light';color:#108dd1;margin-top:30px;float:left;}
+
+.buy_process_txt{width:100%;text-align:center;font:56px 'Calibri-Light';color:#fff;margin-top:0px;float:left;}
+
+.buy_process_txt span{color:#108dd1;}
+
+a.click1{background:url(../images/click1.png) no-repeat;background-size:100% 100%;width:100%;height:211px;float:left;margin:20px 0;} 
+
+a.click1:hover{background:url(../images/click1h.png) no-repeat;background-size:100% 100%;width:100%;height:211px;float:left;margin:20px 0;} 
+
+a.click2{background:url(../images/click2.png) no-repeat;background-size:100% 100%;width:100%;height:211px;float:left;margin:20px 0;} 
+
+a.click2:hover{background:url(../images/click2h.png) no-repeat;;background-size:100% 100%;width:100%;height:211px;float:left;margin:20px 0;} 
+
+.client_logos{float: left;width: 100%;background:url(../images/logo_bg.png) repeat center fixed;-webkit-background-size: cover;moz-background-size: cover;-o-background-size: cover;background-size: cover;min-height:200px;}
+
+.black_bg{background:#000;}
+.email_subscrib{width:100%;float:left;margin:20px 0;color:#fff !important;font:14px 'Calibri-Light';}
+.email_subscrib h1{width:100%;float:left;font:30px 'Calibri-Light';color:#fff;}
+.email_subscrib p{width:100%;float:left;font:16px 'Calibri-Light';color:#fff;}
+p.fotter_pra{color:#fff !important;}
+
+.bg_ftr{background:#2f2f2f;}
+
+.copyright{width:100%;float:left;font:14px 'Calibri-Light';color:#8b9999;text-align:center;padding:10px 0;}
+
+.checkbox{font:16px 'Calibri-Light';}
+
+.forgot_paswrd{width:auto;float:right;font:16px 'Calibri-Light';}
+.login_head{font:20px 'Calibri-Light';}
+
